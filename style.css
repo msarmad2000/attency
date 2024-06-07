@@ -7,6 +7,8 @@
   
 body{
     font-family: 'PT Sans';
+    max-width: 1600px;
+    margin: auto;
 }
 .white{
     color: var(--white);
@@ -23,7 +25,7 @@ body{
     background: linear-gradient(#0A5BCC 0%, #0A5BCC 100%, #072E80 100%);
 }
 .btn-primary {
-    background-color: var(--primary-color);
+    background: linear-gradient(to right, #072E80, #0A5BCC);;
   }
 .gray{
     color: var(--gray);
@@ -36,16 +38,19 @@ body{
 .mt-lg-10{
     margin-top: 10rem;
 }
+.mt-lg-15{
+  margin-top: 15rem;
+}
 .mt-6{
     margin-top: 4rem;
 }
 
 h1{
-    font-size: 72px;
+    font-size: 62px;
     font-weight: 700;
 }
 h2{
-    font-size: 64px;
+    font-size: 60px;
     font-weight: 700; 
 }
 h3{
@@ -65,6 +70,17 @@ p{
     font-size: 22px;
     font-weight: 400;
 }
+.h6{
+  font-size: 24px;
+}
+.h7{
+  font-size: 62px ;
+  font-weight: 700; 
+}
+.py-md-6{
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
 .p2{
     font-size: 20px;
     font-weight: 400;
@@ -76,27 +92,36 @@ p{
     font-size: 16px;
 }
 .px-lg-10{
-    padding-left: 10rem;
-    padding-right: 10rem;
+  padding-left: 16.5rem;
+  padding-right: 16.5rem;
 }
 .btn {
     border: none;
     color: white;
-    padding: 10px 18px;
+    padding: 12px 20px 12px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 20px;
+    font-size: 18px;
+    border-radius: 50px;
   }
+
+.btnu{
+  padding: 20px 40px 20px 40px;
+}
 
 .container .navbar-nav .nav-item .nav-link{
     color: var(--black);
     font-weight: 400;
 }
+.crm .row .col-md-6 .image-container .top-0{
+  top: 15vh !important;
+}
+.crm .row .col-md-6 .image-container .top-70{
+  top: 70vh !important;
+}
 
-.crm .row .col-md-6 .image-container{
+/* .crm .row .col-md-6 .image-container{
     position: relative;
     overflow: hidden;
 }
@@ -117,7 +142,7 @@ p{
     top: 50%;
     left: 0;
     z-index: 2;
-}
+} */
 
 
 
@@ -154,18 +179,98 @@ p{
     text-decoration: none;
 }
 
+ 
+    /* Monthly and yearly button */
+.switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+  margin: 0 10px;
+}
+
+.switch input {
+  display: none;
+}
+
+.sliderr {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.sliderr:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+.sliderr:active:before {
+  width: 30px;
+}
+
+input:checked + .sliderr {
+  background-color: var(--primary-color);
+}
+
+input:checked + .sliderr:before {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+.sliderr.round {
+  border-radius: 34px;
+}
+
+.sliderr.round:before {
+  border-radius: 50%;
+}
+
+/* pricing */
+
+.pricing .container-fluid .position-absolute .row .offset-md-1 .card .card-body ul li{
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+.pricing .container-fluid .position-absolute .row .mt-sm-only-5 .card  .card-body ul li{
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+.footer .container .row .col-md-3 .mt-md-4 i{
+  font-size: 23px;
+} 
+.pe-md-6{
+  padding-right:3.5rem!important;
+}
+.customers .container {
+  padding: 0px 100px;
+}
+
 @media (max-width: 320px) {
   .mt-lg-10{
     margin-top: 1rem;
   }
   h1{
-    font-size: 22px;
-  }
-  h2{
     font-size: 20px;
   }
-  h3{
+  h2{
     font-size: 18px;
+  }
+  h3{
+    font-size: 17px;
   }
   h4{
     font-size: 16px;
@@ -174,6 +279,9 @@ p{
     font-size: 15px;
   }
   h6{
+    font-size: 14px;
+  }
+  .h6{
     font-size: 14px;
   }
   p{
@@ -189,9 +297,14 @@ p{
     font-size: 10px;
   }
 
+  #buton{
+    width: 50%;
+  }
 
   .btn{
-    font-size: 14px;
+    font-size: 12px;
+    padding: 12px 10px 12px 10px;
+   
   }
   .carousel-wrap {
     margin: 25px auto 0px auto !important;
@@ -199,10 +312,7 @@ p{
   .owl-carousel .item {
     text-align: -webkit-center !important;
 }
-  .px-lg-10{
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+ 
 .paragraph-height {
     height: 15px;
 
@@ -210,28 +320,69 @@ p{
 .mt-6{
     margin-top: 4rem;
 }
-.freetrail{
-    margin-top: 900px;
-}
+
 
 .mt-sm-only-5 {
     margin-top: 3rem !important;
 }
-
+/* yaha sa aga sa dubara start kr rha hu */
+.pe-md-6{
+  padding-right: 0.5rem !important;
 }
 
+.customers .container {
+  padding: 0px 20px;
+}
+.py-md-6{
+  padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+.px-lg-10{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.pe-5{
+padding-right: 0.5rem !important;
+}
+.mt-lg-15 {
+  margin-top: 1rem;
+}
+
+.pricing .container-fluid .w-100{
+  padding: 0px 20px;
+}
+.pricing .container-fluid .position-absolute .row .offset-md-1 .card .card-body ul li{
+  font-size: 12px;
+}
+.pricing .container-fluid .position-absolute .row .mt-sm-only-5 .card .card-body ul li{
+  font-size: 12px;
+}
+.freetrail{
+  margin-top: 820px;
+}
+.h7{
+  font-size: 16px;
+}
+.py-sm-3{
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+.padding-footer{
+  padding-top:2px !important;
+}
+}
 @media (min-width: 320px) and (max-width: 375px) {
     .mt-lg-10{
         margin-top: 1rem;
       }
       h1{
-        font-size: 22px;
-      }
-      h2{
         font-size: 20px;
       }
-      h3{
+      h2{
         font-size: 18px;
+      }
+      h3{
+        font-size: 17px;
       }
       h4{
         font-size: 16px;
@@ -240,6 +391,9 @@ p{
         font-size: 15px;
       }
       h6{
+        font-size: 14px;
+      }
+      .h6{
         font-size: 14px;
       }
       p{
@@ -258,6 +412,7 @@ p{
     
       .btn{
         font-size: 14px;
+        padding: 12px 10px 12px 10px;
       }
       .carousel-wrap {
         margin: 25px auto 0px auto !important;
@@ -276,14 +431,54 @@ p{
     .mt-6{
         margin-top: 4rem;
     }
-    .freetrail{
-        margin-top: 900px;
-    }
-    
+   
     .mt-sm-only-5 {
         margin-top: 3rem !important;
     }
-    
+    /* yaha sa aga sa dubara kr rha hu */
+    #buton {
+      width: 50%;
+    }
+    .pe-md-6 {
+      padding-right: 0.5rem !important;
+    }
+    .customers .container {
+      padding: 0px 20px;
+  }
+  .py-md-6 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  .pe-5 {
+    padding-right: 0.5rem !important;
+  }
+  .mt-lg-15 {
+    margin-top: 1rem;
+  }
+    .freetrail{
+      margin-top: 800px;
+  }
+  .pricing .container-fluid .position-absolute .row .offset-md-1 .card .card-body ul li{
+    font-size: 12px;
+  }
+  .pricing .container-fluid .position-absolute .row .mt-sm-only-5 .card .card-body ul li{
+    font-size: 12px;
+  }
+  .h7{
+    font-size: 16px;
+  }
+  .py-sm-3{
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+  .pricing .container-fluid .w-100 {
+    padding: 0px 20px;
+}
+.btnu{
+    font-size: 12px;
+    padding: 12px 10px 12px 10px;
+
+}
 }
 @media (min-width: 375px) and (max-width: 425px) {
     .mt-lg-10{
@@ -307,6 +502,9 @@ p{
       h6{
         font-size: 14px;
       }
+      .h6{
+        font-size: 14px;
+      }
       p{
         font-size: 12px;
       }
@@ -323,6 +521,7 @@ p{
     
       .btn{
         font-size: 14px;
+        padding: 12px 10px 12px 10px;
       }
       .carousel-wrap {
         margin: 25px auto 0px auto !important;
@@ -330,10 +529,7 @@ p{
       .owl-carousel .item {
         text-align: -webkit-center !important;
     }
-      .px-lg-10{
-        padding-left: 2rem;
-        padding-right: 2rem;
-      }
+     
     .paragraph-height {
         height: 15px;
     
@@ -341,14 +537,54 @@ p{
     .mt-6{
         margin-top: 4rem;
     }
-    .freetrail{
-        margin-top: 840px;
-    }
+   
     
     .mt-sm-only-5 {
         margin-top: 1rem !important;
     }
-    
+       /* yaha sa aga sa dubara kr rha hu */
+       #buton {
+        width: 50%;
+      }
+      .pe-md-6 {
+        padding-right: 0.5rem !important;
+      }
+      .customers .container {
+        padding: 0px 30px;
+    }
+    .py-md-6 {
+      padding-top: 2rem !important;
+      padding-bottom: 2rem !important;
+    }
+    .px-lg-10{
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+    .pe-5 {
+      padding-right: 0.5rem !important;
+    }
+    .pricing .container-fluid .w-100 {
+      padding: 0px 20px;
+  }
+    .mt-lg-15 {
+      margin-top: 1rem;
+    }
+      .freetrail{
+        margin-top: 765px;
+    }
+    .pricing .container-fluid .position-absolute .row .offset-md-1 .card .card-body ul li{
+      font-size: 12px;
+    }
+    .pricing .container-fluid .position-absolute .row .mt-sm-only-5 .card .card-body ul li{
+      font-size: 12px;
+    }
+    .h7{
+      font-size: 16px;
+    }
+    .py-sm-3{
+      padding-top: 0.5rem !important;
+      padding-bottom: 0.5rem !important;
+    } 
    
 }
 
@@ -374,6 +610,9 @@ p{
       h6{
         font-size: 14px;
       }
+      .h6{
+        font-size: 14px;
+      }
       p{
         font-size: 12px;
       }
@@ -389,7 +628,9 @@ p{
     
     
       .btn{
-        font-size: 14px;
+        font-size: 15px;
+        padding: 12px 18px 12px 18px;
+      
       }
       .carousel-wrap {
         margin: 25px auto 0px auto !important;
@@ -397,10 +638,7 @@ p{
       .owl-carousel .item {
         text-align: -webkit-center !important;
     }
-      .px-lg-10{
-        padding-left: 2rem;
-        padding-right: 2rem;
-      }
+    
     .paragraph-height {
         height: 15px;
     
@@ -409,12 +647,55 @@ p{
         margin-top: 4rem;
     }
     .freetrail{
-        margin-top: 840px;
+        margin-top: 770px;
     }
     
     .mt-sm-only-5 {
         margin-top: 1rem !important;
     }
+     /* yaha sa aga sa dubara kr rha hu */
+     #buton {
+      width: 50%;
+    }
+    .pe-md-6 {
+      padding-right: 0.5rem !important;
+    }
+    .customers .container {
+      padding: 0px 35px;
+  }
+  .py-md-6 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  .px-lg-10{
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+  .pe-5 {
+    padding-right: 0.5rem !important;
+  }
+  .pricing .container-fluid .w-100 {
+    padding:0px 25px;
+}
+  .mt-lg-15 {
+    margin-top: 1rem;
+  }
+    .freetrail{
+      margin-top: 765px;
+  }
+  .pricing .container-fluid .position-absolute .row .offset-md-1 .card .card-body ul li{
+    font-size: 12px;
+  }
+  .pricing .container-fluid .position-absolute .row .mt-sm-only-5 .card .card-body ul li{
+    font-size: 12px;
+  }
+  .h7{
+    font-size: 18px;
+  }
+  .py-sm-3{
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  } 
 }
   
   /* Medium devices (laptops, 768px and up) */
@@ -440,6 +721,9 @@ p{
       h6{
         font-size: 20px;
       }
+      .h6{
+        font-size: 20px;
+      }
       p{
         font-size: 18px;
       }
@@ -453,7 +737,10 @@ p{
         font-size: 12px;
       }
       .btn{
-        font-size: 14px;
+        font-size: 16px;
+      }
+      .btnu{
+        padding: 14px 22px 14px 22px;
       }
       .carousel-wrap {
         margin: 25px auto 0px auto !important;
@@ -471,22 +758,74 @@ p{
     }
     .mt-6{
         margin-top: 4rem;
-    }
-    .freetrail{
-        margin-top: 580px;
-    }
-    
+    }    
     .crm .row{
         text-align: center;
     }
     .about .container-fluid {
         width: 80%;
     }
-
+    /* Yaha sa aga sa mana dubara ki ha changess */
+    .pe-md-6 {
+      padding-right: 0rem !important;
+    }
+    .customers .container {
+      padding: 0px 35px;
+    }
+    .py-md-6 {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+  }
+    .mt-lg-15 {
+      margin-top: 0rem;
+    }
+    .pricing .container-fluid .position-absolute .row .offset-md-1 .card .card-body ul li{
+        font-size: 15px;
+    }
+    .pricing .container-fluid .position-absolute .row .mt-sm-only-5 .card .card-body ul li {
+      font-size: 15px;
+    }
+    .p-md-5{
+      padding: 1rem !important;
+    }
+    .freetrail{
+      margin-top: 550px !important;
+    }
+    .h7{
+      font-size: 32px;
+    }
+    .footer .container .row .col-md-3 .mt-md-4 .d-flex img:nth-child(3){
+      left: 45%!important;
+    }
+    .footer .container .row .col-md-3 .mt-md-4 .d-flex img:nth-child(5){
+      top: 70px;
+      left: 0px !important;
+    }
+    .footer .container .row .col-md-3 .mt-md-4 .d-flex img:nth-child(7){
+      top: 70px;
+      left: 70px !important;
+    }
+    #instagram{
+      left: 56% !important;
+    }
+    #twitter{
+      top: 85px !important;
+      left: 20px !important;
+    }
+    #youtube{
+      top: 85px !important;
+      right: 40px !important;
+    }
+    #facebook{
+      left: 12% !important;
+    }
+    .footer .container .row .col-md-3 .mt-md-4 i{
+      font-size: 30px;
+    }
   }
   
   /* Large devices (desktops, 992px and up) */
-  @media (min-width: 991px) and (max-width: 1200px) {
+  @media (min-width: 991px) and (max-width: 1199.8px) {
     .mt-lg-10{
         margin-top: 1rem;
       }
@@ -508,6 +847,9 @@ p{
       h6{
         font-size: 22px;
       }
+      .h6{
+        font-size: 22px;
+      }
       p{
         font-size: 20px;
       }
@@ -521,7 +863,7 @@ p{
         font-size: 16px;
       }
       .btn{
-        font-size: 16px;
+        font-size: 18px;
       }
       .carousel-wrap {
         margin: 25px auto 0px auto !important;
@@ -551,19 +893,77 @@ p{
         width: 80%;
     }
     .freetrail .container h2{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+      /* Yaha sa aga sa mana dubara ki ha changess */
+      .pe-md-6 {
+        padding-right: 0rem !important;
+      }
+      .px-lg-10 {
         padding-left: 8rem;
         padding-right: 8rem;
-
+      }
+      .customers .container {
+        padding: 0px 70px;
+      }
+      .py-md-6 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
     }
+      .mt-lg-15 {
+        margin-top: 0rem;
+      }
+      .pricing .container-fluid .position-absolute .row .offset-md-1 .card .card-body ul li{
+          font-size: 18px;
+      }
+      .pricing .container-fluid .position-absolute .row .mt-sm-only-5 .card .card-body ul li {
+        font-size: 18px;
+      }
+      .p-md-5{
+        padding: 1rem !important;
+      }
+      .h7{
+        font-size: 40px;
+      }
+      .footer .container .row .col-md-3 .mt-md-4 .d-flex img:nth-child(3){
+        left: 32%!important;
+      }
+      .footer .container .row .col-md-3 .mt-md-4 .d-flex img:nth-child(5){
+        top: 70px;
+        left: 0px !important;
+      }
+      .footer .container .row .col-md-3 .mt-md-4 .d-flex img:nth-child(7){
+        top: 70px;
+        left: 70px !important;
+      }
+      #instagram{
+        left: 39% !important;
+      }
+      #twitter{
+        top: 85px !important;
+        left: 16px !important;
+      }
+      #youtube{
+        top: 85px !important;
+        right: 0px !important;
+        left: 38% !important;
+      }
+      #facebook{
+        left: 11% !important;
+      }
+      .footer .container .row .col-md-3 .mt-md-4 i{
+        font-size: 35px;
+      }
   }
   
   /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) and (max-width: 1400.99px){
+  @media (min-width: 1200px) and (max-width: 1400px){
     h1{
-        font-size: 40px;
+        font-size: 71px;
       }
       h2{
-        font-size: 32px;
+        font-size: 64px;
       }
       h3{
         font-size: 30px;
@@ -575,6 +975,9 @@ p{
         font-size: 26px;
       }
       h6{
+        font-size: 24px;
+      }
+      .h6{
         font-size: 24px;
       }
       p{
@@ -595,6 +998,9 @@ p{
     .mt-lg-10{
         margin-top: 1.5rem;
     }
+    .mt-lg-15 {
+      margin-top: 1rem;
+  }
     .crm .row {
         text-align: center;
     }
@@ -609,16 +1015,83 @@ p{
     .about .container-fluid .row .offset-xxl-1 .mt-xxl-3{
        text-align: center;
     }
+         /* Yaha sa aga sa mana dubara ki ha changess */
+         .pe-md-6 {
+          padding-right: 0rem !important;
+        }
+        .px-lg-10 {
+          padding-left: 8rem;
+          padding-right: 8rem;
+        }
+        .customers .container {
+          padding:0px 130px;
+        }
+        .py-md-6 {
+          padding-top: 3rem !important;
+          padding-bottom: 3rem !important;
+      }
+        .mt-lg-15 {
+          margin-top: 0rem;
+        }
+        .pricing .container-fluid .position-absolute .row .offset-md-1 .card .card-body ul li{
+            font-size: 18px;
+        }
+        .pricing .container-fluid .position-absolute .row .mt-sm-only-5 .card .card-body ul li {
+          font-size: 18px;
+        }
+        .p-md-5{
+          padding: 1rem !important;
+        }
+        .h7{
+          font-size: 40px;
+        }
+        .footer .container .row .col-md-3 .mt-md-4 .d-flex img:nth-child(3){
+          left: 24%!important;
+        }
+        .footer .container .row .col-md-3 .mt-md-4 .d-flex img:nth-child(5){
+          top: 0px !important;
+          left: 48% !important;
+        }
+        .footer .container .row .col-md-3 .mt-md-4 .d-flex img:nth-child(7){
+          top: 0px;
+          left: 72% !important;
+        }
+        #instagram{
+          left: 30% !important;
+        }
+        #twitter{
+          top: 12px !important;
+          left: 54% !important;
+        }
+        #youtube{
+          right: 0px !important;
+          left: 76% !important;
+        }
+        #facebook{
+          left: 8% !important;
+        }
+        .footer .container .row .col-md-3 .mt-md-4 i{
+          font-size: 35px;
+        }
+        .about .container .row .col-xxl-6 .mt-xxl-3{
+          text-align: center;
+        }
   }
 
-  @media (min-width: 1401px) and (max-width: 1440px){
+  @media (min-width: 1400px) and (max-width: 1500px){
+    h2{
+      font-size:56px;
+    }
+    .btn{
+      font-size: 20px;
+    }
     .crm .row .offset-xxl-1{
         margin-left: 1%;
     }
-    .crm .row h6{
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
+    .crm .row .col-md-6 .image-container .top-0 {
+      top: 30vh !important;
+  }
+  
     .mt-lg-10{
         margin-top: 10rem;
     }
@@ -628,4 +1101,17 @@ p{
     .about .container-fluid .row .col-lg-6{
         width: 57.33%;
     }
+    /* Yaha sa aga sa ma dubara start kr rha hu */
+    .about .container .row .col-lg-6 .position-relative img:first-child{
+      left: 77px !important;
+    }
+    .about .container .row .col-lg-6 .position-relative img:last-child{
+      right: -50px !important ;
+    }
+    .pe-md-6 {
+      padding-right: 6rem !important;
+  }
+  .customers .container {
+    padding:0px 130px;
+  }
   }

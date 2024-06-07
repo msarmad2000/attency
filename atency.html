@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -47,7 +48,8 @@
                         <a class="nav-link">Careers</a>
                     </li>
                     </ul>
-                    <ul class="navbar-nav d-none d-lg-block">
+                    <!-- <ul class="navbar-nav d-none d-lg-block"> -->
+                    <ul class="navbar-nav d-lg-block" id="buton">
                         <button type="button" class="btn btn-primary">SIGN UP FREE</button>
                     </ul>
                 </div>
@@ -57,25 +59,27 @@
     </section>
     
     <section class="crm">
+     <div class="container">
         <div class="row gx-0 px-4">
-            <div class="offset-xxl-1 col-xxl-5 mt-lg-10">
+            <div class=" col-xxl-6 mt-lg-10 pe-md-6">
                 <h6 class="primary-color weightseven">Most Trusted CRM Tools</h6>
                 <h1 class="mt-4">A powerful yet simple CRM for your small business</h1>
                 <h6 class="gray mt-md-4">Meet the small business CRM that just works. Get started in under 30 minutes and build customer relationships for life.</h6>
 
                 <div class="mt-xxl-3 mt-2">
-                    <button type="button" class="btn btn-primary">SIGN UP FREE</button>
-                    <button type="button" class="btn mx-md-4 btn-black">GET A DEMO ></button>
+                    <button type="button" class="btn btn-primary btnu ">SIGN UP FREE</button>
+                    <button type="button" class="btn mx-md-4 btn-black btnu ">GET A DEMO ></button>
                 </div>
             </div>
             <div class="col-md-6 d-none d-xxl-block">
-                <div class="image-container">
-                    <img src="./images/Vector.png" alt="">
-                    <img src="images/MacBook Air - 1 1.png" alt="">
-                    <img src="images/Group 33.png" alt="">
+                <div class="image-container  overflow-hidden">
+                    <img src="./images/Vector.png" alt="" class="position-relative">
+                    <img src="images/MacBook Air - 1 1.png" alt="" class="position-absolute top-0 end-0 z-index-1">
+                    <img src="images/Group 33.png" alt="" class="position-absolute z-index-2 top-70 start-50">
                 </div>
             </div>
         </div>
+     </div>
     </section>
 
     <section class="slider">
@@ -97,7 +101,7 @@
         </div>
     </section>
     <section class="customers bg-primary" >
-        <div class="container">
+        <div class="container py-md-4">
             <div class="row white">
                 <div class="col-4 col-md-4 my-5">
                     <h2>77%</h2>
@@ -116,10 +120,10 @@
     </section>
 
     <section class="features">
-        <div class="container py-4 py-lg-5">
+        <div class="container py-4 py-md-6">
             <h6 class="text-center primary-color weightseven">Featured</h6>
             <h2 class="text-center ">Features that you'll appreciate</h2>
-            <p class="mx-auto px-lg-10 py-2 gray">You never have to worry about missing appointments or making a sales call. The mighty Bigin app for iOS, iPadOS, macOS, and Android devices with its unified pipeline view gives you the same CRM experience, anywhere. Sell on the go!</p>
+            <p class="mx-auto px-lg-10 py-2 gray p2 text-center">You never have to worry about missing appointments or making a sales call. The mighty Bigin app for iOS, iPadOS, macOS, and Android devices with its unified pipeline view gives you the same CRM experience, anywhere. Sell on the go!</p>
             <div class="row">
                 <div class="col-md-4">
                     <div class="text-center img-container">
@@ -183,7 +187,7 @@
                         <img src="./images/Feature/perspective.png" alt="" class="imgsecond">
                         <img src="./images/Feature/Vector.png" alt="">
                     </div>
-                    <h4 class="text-center mt-6 weightseven">Dashboards</h4>
+                    <h4 class="text-center mt-5 weightseven">Dashboards</h4>
                     <p class="gray p2 text-center paragraph-height">Monitor your performance with dashboards</p>
                     <a href="" class="text-center d-block mx-auto">Learn More <i class="fa-solid fa-chevron-right"></i>
                     </a>
@@ -195,12 +199,12 @@
     </section>
 
     <section class="about">
-        <div class="container-fluid p-3 py-lg-3">
+        <div class="container px-5 py-md-3">
             <div class="row">
-                <div class="offset-xxl-1 col-xxl-5 mt-lg-3">
+                <div class="col-xxl-6 mt-lg-3 pe-md-6">
                     <h6 class="primary-color weightseven">About atency.com</h6>
                     <h2 class="mt-3 weightseven">Multiple pipelines for all your operations</h2>
-                    <p class="p2 mt-3">We integrate with the top business apps out there, to make your work even easier and your CRM your own.</p>
+                    <p class="p2 mt-3 gray">We integrate with the top business apps out there, to make your work even easier and your CRM your own.</p>
             
                     <div class="d-flex flex-row my-4">
                         <div class="position-relative">
@@ -210,7 +214,7 @@
                         </div>
                         <div class="ms-3">
                             <h5 class="black">Usable</h5>
-                            <p class="p3 pe-5">You don't need any prior experience with a CRM to make Bigin work for you. Bigin is easy and is designed to simply work on its own.</p>
+                            <p class="p3 pe-5 gray">You don't need any prior experience with a CRM to make Bigin work for you. Bigin is easy and is designed to simply work on its own.</p>
                         </div>
                     </div>
             
@@ -223,7 +227,7 @@
                         </div>
                         <div class="ms-3">
                             <h5 class="black">Affordable</h5>
-                            <p class="p3 pe-5">We can safely say that we are the most affordable CRM on the market right now, at $7/user/month (billed annually).</p>
+                            <p class="p3 pe-5 gray">We can safely say that we are the most affordable CRM on the market right now, at $7/user/month (billed annually).</p>
                         </div>
                     </div>
             
@@ -236,19 +240,19 @@
                         </div>
                         <div class="ms-3">
                             <h5 class="black">Agile</h5>
-                            <p class="p3 pe-5">atency.com, loved by 20,000+ customers, is optimized for faster actions and frictionless user experiences across web and mobile devices.</p>
+                            <p class="p3 pe-5 gray">atency.com, loved by 20,000+ customers, is optimized for faster actions and frictionless user experiences across web and mobile devices.</p>
                         </div>
                     </div>
             
                     <div class="mt-xxl-3 mt-2">
-                        <button type="button" class="btn btn-primary">SIGN UP FREE</button>
-                        <button type="button" class="btn mx-md-4 btn-black">GET A DEMO ></button>
+                        <button type="button" class="btn btn-primary btnu">SIGN UP FREE</button>
+                        <button type="button" class="btn mx-md-4 btn-black btnu">GET A DEMO ></button>
                     </div>
                 </div>
                 <div class="col-lg-6 pe-0 d-none d-xxl-block">
                     <div class="position-relative">
-                        <img src="./images/Vector (1).png" alt="" class="float-end position-relative">
-                        <img src="./images/Group 27 1.png" alt="" class="position-absolute" style="top:170px; z-index:1; right:0">
+                        <img src="./images/Vector (1).png" alt="" class="position-absolute" style="left:134px">
+                        <img src="./images/Group 27 1.png" alt="" class="position-absolute" style="top:170px; z-index:1;right:-130px">
                     </div>
                 </div>
             </div>
@@ -256,23 +260,29 @@
     </section>
 
      <!-- Pricing -->
-     <section class="pricing position-relative">
+     <section class="pricing position-relative mt-lg-15">
         <div class="container-fluid position-relative px-0">
             <img src="./images/Vector (3).png" alt="" class="d-none d-lg-block">
             <div class="position-absolute top-0 w-100 mt-3">
                 <h6 class="text-center primary-color weightseven">Pricing</h6>
                 <h2 class="weightseven text-center">Customizable solutions built for you</h2>
-                <div class="d-flex flex-row justify-content-center mt-3">
-                    <div class="p-2"><h6>Monthly</h6></div>
-                    <div class="p-2"><img src="./images/Vector (4).png" alt=""></div>
-                    <div class="p-2"><h6 class="weightseven">Yearly</h6></div>
+               
+                <div class="d-flex flex-row justify-content-center m-3">
+                    <div id="monthly-text" class="weightseven h6">Monthly</div>
+                    <label class="switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="sliderr round"></div>
+                    </label>
+                    <div id="yearly-text" class="h6" >Yearly</div>
                 </div>
+                
+
                 <div class="row mx-0">
                     <div class="offset-md-1 col-md-5">
-                        <div class="card shadow">
-                            <div class="card-body">
+                        <div class="card shadow border border-none" style="border-radius: 20px;">
+                            <div class="card-body p-md-5">
                             <h4 class="card-title weightseven">Monthly</h4>
-                            <p class="card-text gray">Start with our forever free edition, and upgrade whenever you want.</p>
+                            <p class="p3 gray">Start with our forever free edition, and upgrade whenever you want.</p>
                             <p><ul>
                                 <li>No additional costs.</li>
                                 <li>No credit card required for sign up.</li>
@@ -280,15 +290,15 @@
                             </p>
                             <hr>
                             <h4 class="weightseven">$25 Per Month*</h4>
-                            <button type="button" class="btn btn-primary my-4">GET STARTED > </button>
+                            <button type="button" class="btn btn-primary my-4 btnu">GET STARTED > </button>
                             </div>
                         </div> 
                     </div>
                     <div class="col-md-5 mt-sm-only-5">
-                        <div class="card shadow">
-                            <div class="card-body">
+                        <div class="card shadow border border-none" style="border-radius: 20px;">
+                            <div class="card-body p-md-5">
                                 <h4 class="card-title weightseven">Yearly</h4>
-                                <p class="card-text gray">Start with our forever free edition, and upgrade whenever you want.</p>
+                                <p class="p3 gray">Start with our forever free edition, and upgrade whenever you want.</p>
                                 <p><ul>
                                     <li>No additional costs.</li>
                                     <li>No credit card required for sign up.</li>
@@ -296,11 +306,11 @@
                                 </p>
                                 <hr>
                                 <div class="d-flex flex-row">
-                                    <h4 class="weightseven">$25 Per Month*</h4>
-                                    <span class="p-lg-2 mx-lg-4 mx-md-2 primary-color weightseven">save $60</span>
+                                    <h4 class="weightseven">$250 Per Month*</h4>
+                                    <span class="p-lg-2 mx-lg-4 mx-md-2  mx-2 primary-color weightseven">save $60</span>
                                 </div>
                                 
-                                <button type="button" class="btn btn-primary my-4">GET STARTED > </button>
+                                <button type="button" class="btn btn-primary my-4 btnu">GET STARTED > </button>
                             </div>
                         </div> 
                     </div>
@@ -308,38 +318,44 @@
                    
             </div>
         </div>
-        <div class="position-relative text-center d-none d-lg-block">
+        <div class="position-relative text-center d-none d-lg-block mt-md-5">
             <img src="./images/Vector (5).png" alt="">
             <div class="position-absolute" style="top:5%; translate: 50%;right: 50%; z-index:1;">
                 <img src="./images/Clip path group.png" alt="" >
             </div>
-            <div class="position-absolute" style="    top: 25% !important; z-index: 2; right: 8%;" >
+            <div class="position-absolute" style="    top: 25% !important; z-index: 2; right: 11%;" >
                 <img src="./images/Group 44.png" alt="" >
             </div>
         </div>
     </section>
 
         <!-- Free Trail -->
-    <section class="freetrail my-xxl-3 p-md-3">
+    <section class="freetrail my-md-5 p-md-5 py-4">
         <div class="container text-center">
-            <h6 class="primary-color weightseven">Start your free trial today</h6>
-            <h2 >If your goal is to run and grow your business efficiently, atency.com can help!</h2>
-            <button type="button" class="btn btn-primary">SIGN UP FREE</button>
+            <h6 class="primary-color weightseven mb-md-4">Start your free trial today</h6>
+            <h2 class="h7 mb-md-4">If your goal is to run and grow your business efficiently, atency.com can help!</h2>
+            <button type="button" class="btn btn-primary btnu">SIGN UP FREE</button>
         </div>
     </section>
 
      <!-- Footer -->
      <section class="footer" style="background-color: #041E42;">
-        <div class="container py-md-5">
-            <div class="row py-3">
+        <div class="container pt-md-5">
+            <div class="row py-3 padding-footer">
                 <div class="col-md-3 d-none d-md-block">
                     <h4 class="weightseven white">atency.com</h4>
-                    <a href=""><button type="button" class="btn btn-primary mt-md-4">SIGN UP FREE</button></a>
+                    <a href=""><button type="button" class="btn btn-primary btnu mt-md-4">SIGN UP FREE</button></a>
                     <div class="mt-md-4">
-                        <a href="" class="white me-2"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="" class="white me-2"><i class="fa-brands fa-instagram "></i></a>
-                        <a href="" class="white me-2"><i class="fa-brands fa-twitter "></i></a>
-                        <a href="" class="white me-2"><i class="fa-brands fa-youtube"></i></a>
+                        <div class="d-flex flex-row justify-content-center position-relative">
+                            <img src="./images/footer/Rectangle 13.png" alt="" class="position-absolute start-0">
+                            <a href=""class="position-absolute white" style="left:9%; top:12px;"  id="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <img src="./images/footer/Rectangle 13.png" alt="" class="position-absolute" style="left: 21%;">
+                            <a href="" class="white"><i class="fa-brands fa-instagram  position-absolute"  style="left: 28%;top:15px;"  id="instagram"></i></a>
+                            <img src="./images/footer/Rectangle 13.png" alt="" class="position-absolute" style="left: 42%;">
+                            <a href="" class="white"><i class="fa-brands fa-twitter  position-absolute" id="twitter"  style="left: 48%;top:15px;"></i></a>
+                            <img src="./images/footer/Rectangle 13.png" alt="" class="position-absolute" style="right: 17%;">
+                            <a href="" class="white"><i class="fa-brands fa-youtube  position-absolute" id="youtube"  style="right: 22%; top:15px" ></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-4">
@@ -357,9 +373,9 @@
                 <div class="col-md-3 col-4">
                     <h6 class="weightseven white">Solutions</h6>
                     <div class="mt-lg-4">
-                        <a href="" class="white"><p class="p3">atency.com For Marketing</p></a>
-                        <a href="" class="white"><p class="p3">atency.com For Commerce</p></a>
-                        <a href="" class="white"><p class="p3">atency.com For Customer Engagement</p></a>
+                        <a href="" class="white"><p>Marketing</p></a>
+                        <a href="" class="white"><p>Commerce</p></a>
+                        <a href="" class="white"><p>Customer Engagement</p></a>
                     </div>
                 </div>
                 <div class="col-md-3 col-4">
@@ -375,7 +391,7 @@
                 </div>
             </div>
             <hr class="white">
-            <p class="text-center white p3 mb-0">© 2023 atency.com | All rights reserved.</p>
+            <p class="text-center white p3 mb-0 py-3 py-sm-3">© 2023 atency.com | All rights reserved.</p>
         </div>
     </section>
 
@@ -408,6 +424,26 @@
           }
         }
       })
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const checkbox = document.getElementById("checkbox");
+        const monthlyText = document.getElementById("monthly-text");
+        const yearlyText = document.getElementById("yearly-text");
+    
+        checkbox.addEventListener("change", function() {
+            if (checkbox.checked) {
+                yearlyText.classList.add("weightseven");
+                monthlyText.classList.remove("weightseven");
+                monthlyText.style.color = "black";   // Removing primary color style for Monthly text
+            } else {
+                monthlyText.classList.add("weightseven");
+                yearlyText.classList.remove("weightseven");
+                yearlyText.style.color = "black";    // Removing primary color style for Yearly text
+            }
+        });
+    });
+      
   </script>
   </body>
 </html>
